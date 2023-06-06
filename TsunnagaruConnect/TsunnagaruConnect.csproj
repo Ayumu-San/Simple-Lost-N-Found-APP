@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E715EFBD-EFA7-474E-A56E-545C30E357EA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TsunnagaruConnect</RootNamespace>
+    <AssemblyName>TsunnagaruConnect</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataReport.Designer.cs">
+      <DependentUpon>DataReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB_ACCLNFDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_ACCLNFDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ForLog.cs" />
+    <Compile Include="FoundsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FoundsForm.Designer.cs">
+      <DependentUpon>FoundsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingData.Designer.cs">
+      <DependentUpon>SettingData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTransaksiJual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTransaksiJual.Designer.cs">
+      <DependentUpon>FormTransaksiJual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Koneksi.cs" />
+    <Compile Include="ListNTakeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListNTakeForm.Designer.cs">
+      <DependentUpon>ListNTakeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LostForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LostForm.Designer.cs">
+      <DependentUpon>LostForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpsiAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpsiAdmin.Designer.cs">
+      <DependentUpon>OpsiAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SettingDataLost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingDataLost.Designer.cs">
+      <DependentUpon>SettingDataLost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Take.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Take.Designer.cs">
+      <DependentUpon>Take.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Username.cs" />
+    <EmbeddedResource Include="DataReport.resx">
+      <DependentUpon>DataReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FoundsForm.resx">
+      <DependentUpon>FoundsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingData.resx">
+      <DependentUpon>SettingData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTransaksiJual.resx">
+      <DependentUpon>FormTransaksiJual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListNTakeForm.resx">
+      <DependentUpon>ListNTakeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LostForm.resx">
+      <DependentUpon>LostForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpsiAdmin.resx">
+      <DependentUpon>OpsiAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SettingDataLost.resx">
+      <DependentUpon>SettingDataLost.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DB_ACCLNFDataSet.xsc">
+      <DependentUpon>DB_ACCLNFDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DB_ACCLNFDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_ACCLNFDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_ACCLNFDataSet.xss">
+      <DependentUpon>DB_ACCLNFDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>
